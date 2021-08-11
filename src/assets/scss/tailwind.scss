@@ -13,3 +13,19 @@ h3 {
 @tailwind components;
 @tailwind utilities;
 
+.theme-light {
+  --bg-background-primary: white;
+  --bg-background-secondary: #f7fafc;
+  --bg-background-ternary: #e2e8f0;
+  --text-color-primary: #1e3951;
+  --text-color-secondary: #102C44;
+}
+
+.theme-dark {
+  --bg-background-primary: #0d2438;
+  --bg-background-secondary: #102C44;
+  --bg-background-ternary: #1e3951;
+  --text-color-primary: #e2e8f0;
+  --text-color-secondary: #f7fafc;
+}
+

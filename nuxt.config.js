@@ -30,6 +30,13 @@ export default {
 
   modules: ['nuxt-purgecss'],
 
+  tailwindcss: {
+    jit: true,
+    // add '~tailwind.config` alias
+    exposeConfig: true,
+
+  },
+
   build: {
     extractCSS: true,
     postcss: {

@@ -2,9 +2,9 @@
   <div class="card">
     <img :src="imageUrl" :alt="title">
 
-    <div class="p-2">
-      <span class="title"> {{ title }}</span>
-      <p :title="description">{{ description }}</p>
+    <div class="p-2 bg-background-secondary">
+      <span class="title text-copy-primary"> {{ title }}</span>
+      <p class="text-copy-secondary" :title="description">{{ description }}</p>
       <span class="chip"> {{ length }}</span>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default class Card extends Vue {
 
 <style lang="scss" scoped>
   .card {
-    @apply w-96 max-w-sm rounded overflow-hidden shadow-lg;
+    @apply w-96 max-w-sm rounded overflow-hidden shadow-lg mr-3;
     min-width: 24rem;
 
     & + .card {
@@ -56,7 +56,7 @@ export default class Card extends Vue {
     }
 
     p {
-       @apply text-gray-700 text-base overflow-ellipsis whitespace-nowrap overflow-hidden;
+       @apply overflow-ellipsis whitespace-nowrap overflow-hidden;
     }
 
     .chip {
