@@ -13,14 +13,28 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
     extend: {
       colors: {
         emerald: colors.emerald,
         gray: colors.trueGray
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderColor: ['focus-visible'],
+      opacity: ['disabled'],
+    },
   },
 }
